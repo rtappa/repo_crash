@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_pytest_example.handlers.routes import configure_routes
+from handlers.routes import configure_routes
 from flask_wtf.csrf import CSRFProtect
 
 app = Flask(__name__)
