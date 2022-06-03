@@ -12,7 +12,7 @@
   #   sudo sh get-docker.sh
   - name: Get the git file from GitHub
     git:
-      repo: https://github.com/rtappa/Projet_Devops_App2.git
+      repo: https://github.com/rtappa/repo_crash.git
       dest: /home/vagrant/projet/
   - name: run docker compose
     shell: 
