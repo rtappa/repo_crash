@@ -1,6 +1,9 @@
 from flask import request
 import json
+from flask_wtf.csrf import CSRFProtect
 
+csrf = CSRFProtect(routes)
+csrf.init_app(routes)
 
 def configure_routes(app):
 
