@@ -11,8 +11,8 @@
   #    curl -fsSL https://get.docker.com -o get-docker.sh
   #   sudo sh get-docker.sh
   - name: Get the git file from GitHub
-    git: https://github.com/rtappa/repo_crash.git
-      repo: 
+    git:
+      repo: https://github.com/rtappa/repo_crash.git
       dest: /home/vagrant/projet/
   - name: run docker compose
     shell: 
