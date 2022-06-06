@@ -1,6 +1,6 @@
 ---
 - name: Projet Load balancer
-  hosts: 141.95.152.205
+  hosts: nodevm
   become: true
   tasks:
   - name: Check connexion
