@@ -1,7 +1,6 @@
 ---
 - name: Projet Load balancer
-  hosts: all
-  remote_user: vagrant
+  hosts: 141.95.152.205
   become: true
   tasks:
   - name: Check connexion
