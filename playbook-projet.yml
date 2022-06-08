@@ -1,19 +1,19 @@
 ---
 - name: Projet Load balancer
-  hosts: nodevm
+  hosts: vpc-robin
   become: true
   tasks:
   - name: Check connexion
     ping:
-  #- name: Install Docker...
-  #  shell: |
-  #    curl -fsSL https://get.docker.com -o get-docker.sh
-  #   sudo sh get-docker.sh
+  - name: Install Docker...
+    shell: |
+      curl -fsSL https://get.docker.com -o get-docker.sh
+      sudo sh get-docker.sh
   - name: Get the git file from GitHub
     git:
       repo: https://github.com/rtappa/repo_crash.git
       dest: /home/vagrant/projet/
   - name: run docker compose
     shell: 
-      cmd: docker compose up --build -d --scale app=2
+      cmd: docker compose up --build -d --scale app=3
       chdir: projet
