@@ -9,6 +9,8 @@
     shell: |
       curl -fsSL https://get.docker.com -o get-docker.sh
       sudo sh get-docker.sh
+  - name: Install git
+    shell: apt install git
   - name: Get the git file from GitHub
     git:
       repo: https://github.com/rtappa/repo_crash.git
