@@ -5,10 +5,10 @@
   tasks:
   - name: Check connexion
     ping:
-  - name: Install Docker...
-    shell: |
-      curl -fsSL https://get.docker.com -o get-docker.sh
-      sudo sh get-docker.sh
+  #- name: Install Docker...
+  #  shell: |
+  #    curl -fsSL https://get.docker.com -o get-docker.sh
+  #    sudo sh get-docker.sh
   - name: Install git
     shell: apt-get install git -y 
   - name: Get the git file from GitHub
