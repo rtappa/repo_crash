@@ -14,7 +14,7 @@
   - name: Get the git file from GitHub
     git:
       repo: https://github.com/rtappa/repo_crash.git
-      dest: /home/vagrant/projet/
+      dest: /home/projet/
   - name: run docker compose
     shell: 
       cmd: docker compose up --build -d --scale app=3
